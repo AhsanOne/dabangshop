@@ -1,9 +1,12 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  background-color:#f8f8f8;
+}
+h3{
+  line-height: 1.5em!important;
 }
 .search-field {
-  background-color: #f8f8f8;
   padding: 5px;
   margin-bottom: 50px;
 }
@@ -40,21 +43,21 @@ body {
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
+  grid-gap: 15px;
   text-align: center;
   width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
 }
+.product{
+  height: 100%;
+}
 .single-product {
   padding: 10px;
-  transition: 0.6s;
-}
-.single-product:hover {
-  box-shadow: 4px 4px 7px gray;
-  border-radius: 10px;
-  border: 1px solid cyan;
+  background-color: #ffffff;
+  height: 100%;
+  cursor: pointer;
 }
 .product-image {
   width: 150px;
@@ -64,6 +67,7 @@ body {
   width: 350px;
   /* border: 1px solid green; */
   padding: 10px;
+  background-color: #ffffff;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 30px;
@@ -100,7 +104,22 @@ body {
   color: #6c6c6c;
 }
 .ratings i{
-  color: #ff9800;
+  color: #c5c6c7;
   margin-right: 15px;
   margin-left: 5px;
+}
+#addToCart-btn{
+  background-color: #ff7878;
+  border: 0;
+}
+#details-btn{
+  background-color: #9c9c9c;
+  border: 0;
+}
+.buy-now-btn{
+  background-color: #ff7878;
+  border: none;
+}
+.buy-now-btn:hover{
+  background-color: #ff7878;
 }
