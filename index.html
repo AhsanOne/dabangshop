@@ -23,24 +23,29 @@
 </head>
 
 <body>
-  <header></header>
+  <header></header> <!-- header tag added for google crawler -->
+  <!-- start main section -->
   <main class="main">
+    <!-- start the search bar section -->
     <div class="search-field">
       <div class="search-box">
         <input id="input-field" type="text" placeholder="Search in Dabangshop"/>
         <button type="button" class="search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
+          autocomplete="off" id="search-btn">
           Search
         </button>
       </div>
     </div>
+    <!-- ending the search bar section -->
     <div class="row">
+      <!-- start product card section -->
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
           <!-- product card place -->
         </div>
       </div>
-      <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
+      <!-- ending the product card section -->
+      <div class="col-md-3 col-lg-3 col-sm-5 cart-main"> <!-- cart calculator section -->
         <div class="cart" id="my-cart">
           <table class="table">
             <thead>
@@ -89,9 +94,11 @@
           </div>
         </div>
       </div>
+      <!-- ending the cart calculator section -->
     </div>
   </main>
-  <footer></footer>
+  <!-- ending the main section -->
+  <footer></footer> <!-- footer tag added by google crawler -->
 
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>

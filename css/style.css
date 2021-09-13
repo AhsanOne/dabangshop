@@ -1,3 +1,4 @@
+/* utility CSS */
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
@@ -6,6 +7,7 @@ body {
 h3{
   line-height: 1.5em!important;
 }
+/* start search bar design CSS */
 .search-field {
   padding: 5px;
   margin-bottom: 50px;
@@ -40,6 +42,7 @@ h3{
   color: #000000;
   box-shadow: 0 20px 29px 0 rgb(207 67 20 / 50%);
 }
+/* start product card design CSS */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -58,14 +61,15 @@ h3{
   background-color: #ffffff;
   height: 100%;
   cursor: pointer;
+  border-radius: 5px;
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+/* start cart calculator design CSS */
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   background-color: #ffffff;
   box-shadow: 10px 10px 20px gray;
@@ -94,12 +98,14 @@ h3{
     padding-right: 10px;
   }
 }
+/* responsive for mobile devices */
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/* rating icon CSS */
 .ratings{
   color: #6c6c6c;
 }
@@ -108,6 +114,7 @@ h3{
   margin-right: 15px;
   margin-left: 5px;
 }
+/* start add to cart and buy now button design CSS */
 #addToCart-btn{
   background-color: #ff7878;
   border: 0;
@@ -119,6 +126,7 @@ h3{
 .buy-now-btn{
   background-color: #ff7878;
   border: none;
+  outline: none;
 }
 .buy-now-btn:hover{
   background-color: #ff7878;
