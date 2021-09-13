@@ -3,27 +3,39 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .search-field {
-  border: none;
-  border-radius: 50px;
+  background-color: #f8f8f8;
   padding: 5px;
-  outline: none;
-}
-.search-field:hover {
-  outline: none;
-  border: none;
+  margin-bottom: 50px;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none;
+  width: 40%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#input-field{
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 25px;
+}
+#input-field::placeholder{
+  color: #c5c6c7;
 }
 .search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+  background-color: #f16232;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 35px;
+}
+.search-button:hover{
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 20px 29px 0 rgb(207 67 20 / 50%);
 }
 #all-products {
   display: grid;
@@ -88,7 +100,7 @@ body {
   color: #6c6c6c;
 }
 .ratings i{
-  color: blueviolet;
+  color: #ff9800;
   margin-right: 15px;
   margin-left: 5px;
 }
