@@ -60,7 +60,12 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = value.toFixed(2); // cart value add
+  if(id === 'delivery-charge'){
+    document.getElementById(id).innerText = value; // set delivery charge
+  }
+  else{
+    document.getElementById(id).innerText = value.toFixed(2); // set tax charge
+  }
 };
 
 
